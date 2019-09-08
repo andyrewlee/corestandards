@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import PageTemplate from '../templates/PageTemplate';
 
 const About = () => (
-  <>
-    <Navbar />
+  <PageTemplate>
     <h1>About</h1>
-  </>
+  </PageTemplate>
 );
 
 export default About;

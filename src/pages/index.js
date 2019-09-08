@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import PageTemplate from '../templates/PageTemplate';
 
 const Home = () => (
-  <>
-    <Navbar />
+  <PageTemplate>
     <h1>Home</h1>
-  </>
+  </PageTemplate>
 );
 
 export default Home;

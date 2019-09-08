@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import PageTemplate from '../templates/PageTemplate';
 
 const Contact = () => (
-  <>
-    <Navbar />
+  <PageTemplate>
     <h1>Contact</h1>
-  </>
+  </PageTemplate>
 );
 
 export default Contact;
