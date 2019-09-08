@@ -10,6 +10,7 @@ const Navbar = () => (
   <div>
     <StyledLink to="/">Home</StyledLink>
     <StyledLink to="/about">About</StyledLink>
+    <StyledLink to="/contact">Contact</StyledLink>
   </div>
 );
 
