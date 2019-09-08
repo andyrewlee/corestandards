@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from "gatsby";
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+
+const StyledLink = styled(Link)`
+  margin-right: 1rem;
+`;
 
 const Navbar = () => (
   <div>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
+    <StyledLink to="/">Home</StyledLink>
+    <StyledLink to="/about">About</StyledLink>
   </div>
 );
 
