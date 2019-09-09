@@ -19,25 +19,25 @@ const Certifications = () => (
     <h2>Intermediate: Frontend</h2>
     <ul>
       <li>
-        V3: JS games
+        V3: Games
       </li>
       <li>
         V4: APIs
       </li>
       <li>
-        V5: JS libraries
+        V5: Using external libraries
       </li>
       <li>
-        V6: React
+        V6: Single page application
       </li>
     </ul>
     <h2>Advanced: Backend</h2>
     <ul>
       <li>
-        V7: Express
+        V7: Server
       </li>
       <li>
-        V8: Postgres
+        V8: Database
       </li>
       <li>
         V9: Authentication
