@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import PageTemplate from '../templates/PageTemplate';
 import LessonLink from '../components/LessonLink';
