@@ -11,7 +11,7 @@ const Navbar = () => (
     <StyledLink to="/">Home</StyledLink>
     <StyledLink to="/lessons/">Lessons</StyledLink>
     <StyledLink to="/certifications/">Certifications</StyledLink>
-    <StyledLink to="/about/">About</StyledLink>
+    <StyledLink to="/tutoring/">Tutoring</StyledLink>
   </>
 );
 

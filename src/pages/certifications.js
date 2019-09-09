@@ -4,6 +4,12 @@ import PageTemplate from '../templates/PageTemplate';
 const Certifications = () => (
   <PageTemplate>
     <h1>Certifications</h1>
+    <p>
+      You think you are ready for a ceritifcation test? Send me an email
+      at <a href="mailto:andyrewlee@gmail.com">andyrewlee.gmail.com</a> with
+      subject line CERTIFICATION REQUEST. Certification will be administered
+      live over video chat on a first come first serve basis.
+    </p>
     <h2>Beginner: HTML, CSS, JS</h2>
     <ul>
       <li>
