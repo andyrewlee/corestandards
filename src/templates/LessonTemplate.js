@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import Navbar from '../components/Navbar';
+
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -14,11 +16,12 @@ export const pageQuery = graphql`
   }
 `;
 
-const BlogTemplate = ({ data }) => {
+const LessonTemplate = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <div>
+      <Navbar />
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.date}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -26,4 +29,4 @@ const BlogTemplate = ({ data }) => {
   );
 };
 
-export default BlogTemplate;
+export default LessonTemplate;

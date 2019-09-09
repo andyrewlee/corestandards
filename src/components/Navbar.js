@@ -6,12 +6,17 @@ const StyledLink = styled(Link)`
   margin-right: 1rem;
 `;
 
+const StyledDiv = styled.div`
+  margin-bottom: 1rem;
+`;
+
 const Navbar = () => (
-  <div>
+  <StyledDiv>
     <StyledLink to="/">Home</StyledLink>
+    <StyledLink to="/lessons">Lessons</StyledLink>
     <StyledLink to="/about">About</StyledLink>
     <StyledLink to="/contact">Contact</StyledLink>
-  </div>
+  </StyledDiv>
 );
 
 export default Navbar;

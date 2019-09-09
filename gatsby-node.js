@@ -2,7 +2,7 @@ const path = require('path');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve('src/templates/BlogTemplate.js');
+  const lessonTemplate = path.resolve('src/templates/LessonTemplate.js');
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -28,7 +28,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
-      component: blogPostTemplate,
+      component: lessonTemplate,
       context: {},
     });
   });
