@@ -6,13 +6,12 @@ import LessonLink from '../components/LessonLink';
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
       edges {
         node {
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             path
             title
           }
@@ -27,9 +26,7 @@ const Lessons = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const lessons = edges
-    .filter(edge => !!edge.node.frontmatter.date)
-    .map(edge => <LessonLink key={edge.node.id} lesson={edge.node} />)
+  const lessons = edges.map(edge => <LessonLink key={edge.node.id} lesson={edge.node} />)
 
   return (
     <PageTemplate>

@@ -13,9 +13,9 @@ const StyledDiv = styled.div`
 const Navbar = () => (
   <StyledDiv>
     <StyledLink to="/">Home</StyledLink>
-    <StyledLink to="/lessons">Lessons</StyledLink>
-    <StyledLink to="/about">About</StyledLink>
-    <StyledLink to="/contact">Contact</StyledLink>
+    <StyledLink to="/lessons/">Lessons</StyledLink>
+    <StyledLink to="/about/">About</StyledLink>
+    <StyledLink to="/contact/">Contact</StyledLink>
   </StyledDiv>
 );
 
