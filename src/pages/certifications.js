@@ -29,10 +29,10 @@ const Certifications = () => (
         L3: Games
       </li>
       <li>
-        L4: APIs
+        L5: Using external libraries
       </li>
       <li>
-        L5: Using external libraries
+        L4: APIs
       </li>
       <li>
         L6: Single page application

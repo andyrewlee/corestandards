@@ -4,6 +4,10 @@ import { graphql, Link } from 'gatsby';
 
 import Navbar from '../components/Navbar';
 
+const StyledDiv = styled.div`
+  max-width: 480px;
+`;
+
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -27,7 +31,7 @@ const LessonTemplate = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
 
   return (
-    <div>
+    <StyledDiv>
       <Navbar />
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -42,7 +46,7 @@ const LessonTemplate = ({ data, pageContext }) => {
           Next
         </StyledLink>
       }
-    </div>
+    </StyledDiv>
   );
 };
 
