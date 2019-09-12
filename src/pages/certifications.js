@@ -6,77 +6,90 @@ const Certifications = () => (
     <h1>Certifications</h1>
     <p>
       You think you are ready for a ceritifcation test? Send me an email
-      at <a href="mailto:andyrewlee@gmail.com">andyrewlee.gmail.com</a> with
+      at <a href="mailto:corestandardsio@gmail.com">corestandardsio@gmail.com</a> with
       subject line CERTIFICATION REQUEST. Certification will be administered
-      live over video chat on a first come first serve basis.
+      live over video chat on a first come first serve basis. Previous certifications
+      are required before you can advance to the next one.
     </p>
     <h2>Beginner: HTML, CSS, JS</h2>
     <ul>
       <li>
-        V0: HTML
+        L0: HTML
        </li>
       <li>
-        V1: HTML + CSS
+        L1: HTML + CSS
       </li>
       <li>
-        V2: HTML + CSS + JS
+        L2: HTML + CSS + JS
       </li>
     </ul>
     <h2>Intermediate: Frontend</h2>
     <ul>
       <li>
-        V3: Games
+        L3: Games
       </li>
       <li>
-        V4: APIs
+        L4: APIs
       </li>
       <li>
-        V5: Using external libraries
+        L5: Using external libraries
       </li>
       <li>
-        V6: Single page application
+        L6: Single page application
       </li>
     </ul>
     <h2>Advanced: Backend</h2>
     <ul>
       <li>
-        V7: Server
+        L7: Server
       </li>
       <li>
-        V8: Database
+        L8: Database
       </li>
       <li>
-        V9: Authentication
+        L9: Authentication
       </li>
     </ul>
     <h2>Pro: Full stack</h2>
     <ul>
       <li>
-        V10: CRUD app
+        L10: CRUD app
       </li>
       <li>
-        V11: CRUD with Authentication
+        L11: CRUD with Authentication
       </li>
       <li>
-        V12: CRUD GraphQL
+        L12: CRUD GraphQL
       </li>
       <li>
-        V13: CRUD GraphQL with Authentication
+        L13: CRUD GraphQL with Authentication
       </li>
     </ul>
     <h2>Master: Algorithms</h2>
     <ul>
       <li>
-        V14: Sorts
+        L14: Sorts
       </li>
       <li>
-        V15: Recursion
+        L15: Recursion
       </li>
       <li>
-        V16: Searches
+        L16: Searches
       </li>
       <li>
-        V17: Data Structures
+        L17: Data Structures
+      </li>
+    </ul>
+    <h2>Legend</h2>
+    <ul>
+      <li>
+        L18: Mobile
+      </li>
+      <li>
+        L19: Security
+      </li>
+      <li>
+        L20: Microservices
       </li>
     </ul>
   </PageTemplate>
