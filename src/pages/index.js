@@ -2,25 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PageTemplate from '../templates/PageTemplate';
 
-const MainSlide = styled.div`
-  padding-top: 120px;
-  height: 480px;
-
-  p {
-    font-size: 1.3em;
-  }
-
-  text-align: center;
-
-  @media (max-width: 768px) {
-    padding-top: 50px;
-    height: 240px;
-  }
-`;
-
-const BodySlide = styled.div`
-  margin: 4rem 0;
-`;
+import MainSlide from '../components/MainSlide';
+import BodySlide from '../components/BodySlide';
 
 const CourseSlide = styled.div`
   margin: 2rem 0;
