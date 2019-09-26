@@ -4,19 +4,43 @@ import PageTemplate from '../templates/PageTemplate';
 
 import MainSlide from '../components/MainSlide';
 import BodySlide from '../components/BodySlide';
+import BirdOfParadiseImage from '../images/bird-of-paradise.png';
 
 const CourseSlide = styled.div`
-  margin: 2rem 0;
+  margin: 20px 0;
+`;
+
+const StyledImage = styled.img`
+  max-width: 240px;
+
+  @media (max-width: 768px) {
+    max-width: 180px;
+  }
+`;
+
+const ImageContent = styled.div`
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 100%;
+`;
+
+const AttributionText = styled.span`
+  font-size: 8px;
 `;
 
 const Home = () => (
   <PageTemplate>
     <MainSlide>
-      <h1>Kickstart your tech career</h1>
-      <p>
-        With step by step lessons that focus on core programming concepts,
-        Core Standards is the <strong>first step to your career in tech.</strong>
-      </p>
+      <div>
+        <h1>Kickstart your tech career</h1>
+        <p>
+          With step by step lessons that focus on core programming concepts,
+          Core Standards is the <strong>first step to your career in tech.</strong>
+        </p>
+      </div>
+      <ImageContent>
+        <StyledImage src={BirdOfParadiseImage} alt="Logo" />
+      </ImageContent>
     </MainSlide>
     <BodySlide>
       <h2>Course overview</h2>
@@ -65,6 +89,8 @@ const Home = () => (
         </p>
       </CourseSlide>
     </BodySlide>
+
+    <AttributionText>Images from Indoor plant care guide, by Geneva Vanderzeil licensed under CC BY 2.0</AttributionText>
   </PageTemplate>
 );
 

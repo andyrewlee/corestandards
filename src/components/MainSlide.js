@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const MainSlide = styled.div`
-  padding-top: 120px;
+  display: flex;
+  align-items: center;
   height: 400px;
-  text-align: center;
 
   p {
     line-height: 1.4;
