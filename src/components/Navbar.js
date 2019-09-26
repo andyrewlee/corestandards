@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 
 const StyledLink = styled(Link)`
   margin-right: 1rem;
-  text-decoration: none;
 `;
 
 const StyledSpan = styled.span`
@@ -20,6 +19,12 @@ const LogoContent = styled.div`
 const NavbarContent = styled.div`
   display: flex;
   align-items: center;
+
+  a {
+    &:first-child {
+      text-decoration: none;
+    }
+  }
 `;
 
 const Navbar = () => (
