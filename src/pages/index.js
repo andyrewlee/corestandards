@@ -3,25 +3,45 @@ import PageTemplate from '../templates/PageTemplate';
 
 const Home = () => (
   <PageTemplate>
-    <h1>Core Standards</h1>
-    <h2>Kickstart your tech career</h2>
+    <h1>Kickstart your tech career</h1>
     <p>
       With step by step lessons that focus on core programming concepts,
       Core Standards is the <strong>first step to your career in tech.</strong>
     </p>
-    <h2>Real lessons</h2>
+    <h2>Course overview</h2>
     <p>
-      Tired of rambling blogs? Each lesson starts out with clear objectives and
-      ends with exercises that checks for understanding.
-    </p>
-    <p>
-      Don't get sidetracked by unnecessary details and focus on core programming
+      Don't get sidetracked by unnecessary details! Focus on core programming
       concepts that will prepare you to pick up any language or framework.
     </p>
-    <h2>Get certified</h2>
+
+    <h3>Beginner: HTML, CSS, JS</h3>
     <p>
-      Challenge yourself along the way by getting certified. Clear milestones that
-      assess your abilities will guide your learning.
+      Learn about HTML elements that make up a website. Once we learn the basic
+      elements, we will extend their functionality by adding styles with CSS
+      and interactivity with JavaScript.
+    </p>
+
+    <h3>Intermediate: Frontend</h3>
+    <p>
+      Learn how to write simple games, interact with external libraries and APIs,
+      and to top it off, learn how to craft components with React.
+    </p>
+
+    <h3>Advanced: Backend</h3>
+    <p>
+      Create a web server that listens to HTTP requests and sends the appropriate
+      response. By the end we will have a backend API that queries and updates
+      the database.
+    </p>
+
+    <h3>Pro: Full stack</h3>
+    <p>
+      Put it all together by having a client interact with a backend API.
+    </p>
+    
+    <h3>Master: Algorithms and data structures</h3>
+    <p>
+      Learn basics of computer science to improve the quality of your software.
     </p>
   </PageTemplate>
 );

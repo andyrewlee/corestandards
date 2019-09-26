@@ -3,10 +3,7 @@ import styled from 'styled-components';
 import { graphql, Link } from 'gatsby';
 
 import Navbar from '../components/Navbar';
-
-const StyledDiv = styled.div`
-  max-width: 480px;
-`;
+import Layout from '../components/Layout';
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -31,7 +28,7 @@ const LessonTemplate = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
 
   return (
-    <StyledDiv>
+    <Layout>
       <Navbar />
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -46,7 +43,7 @@ const LessonTemplate = ({ data, pageContext }) => {
           Next
         </StyledLink>
       }
-    </StyledDiv>
+    </Layout>
   );
 };
 

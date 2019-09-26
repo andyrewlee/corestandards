@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from '../components/Navbar';
 
-const StyledDiv = styled.div`
-  max-width: 480px;
-`;
+import Navbar from '../components/Navbar';
+import Layout from '../components/Layout';
 
 const PageTemplate = ({ children }) => (
-  <StyledDiv>
+  <Layout>
     <Navbar />
     {children}
-  </StyledDiv>
+  </Layout>
 );
 
 export default PageTemplate;
