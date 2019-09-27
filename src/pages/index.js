@@ -4,11 +4,8 @@ import PageTemplate from '../templates/PageTemplate';
 
 import MainSlide from '../components/MainSlide';
 import BodySlide from '../components/BodySlide';
+import CourseSlide from '../components/CourseSlide';
 import BirdOfParadiseImage from '../images/bird-of-paradise.png';
-
-const CourseSlide = styled.div`
-  margin: 20px 0;
-`;
 
 const StyledImage = styled.img`
   max-width: 240px;
@@ -48,9 +45,8 @@ const Home = () => (
       <CourseSlide>
         <h3>Beginner: HTML, CSS, JS</h3>
         <p>
-          Learn about HTML elements that make up a website. Once we learn the basic
-          elements, we will extend their functionality by adding styles with CSS
-          and interactivity with JavaScript.
+          Once we learn the basic elements, we will extend their functionality by
+          adding styles with CSS and interactivity with JavaScript.
         </p>
       </CourseSlide>
 
@@ -66,8 +62,7 @@ const Home = () => (
         <h3>Advanced: Backend</h3>
         <p>
           Create a web server that listens to HTTP requests and sends the appropriate
-          response. By the end we will have a backend API that queries and updates
-          the database.
+          response.
         </p>
       </CourseSlide>
 

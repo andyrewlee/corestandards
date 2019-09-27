@@ -10,7 +10,6 @@ A website consists of three different types of files: HTML, CSS and JavaScript. 
 
 HTML marks up the content on the website, categorizing the content on the site. It is important to note that HTML does not dictate how something should look, but it dictates what particular content is. For example, we can define a content to be the main headline of the site.
 
-```
+```html
 <h1>Hello world</h1>
 ```
-
