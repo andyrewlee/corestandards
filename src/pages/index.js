@@ -24,10 +24,6 @@ const ImageContent = styled.div`
   width: 100%;
 `;
 
-const AttributionText = styled.span`
-  font-size: 8px;
-`;
-
 const Home = () => (
   <PageTemplate>
     <MainSlide>
@@ -89,8 +85,6 @@ const Home = () => (
         </p>
       </CourseSlide>
     </BodySlide>
-
-    <AttributionText>Images from Indoor plant care guide, by Geneva Vanderzeil licensed under CC BY 2.0</AttributionText>
   </PageTemplate>
 );
 
