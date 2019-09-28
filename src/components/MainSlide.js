@@ -22,8 +22,7 @@ const MainSlide = styled.div`
     }
 
     p {
-      line-height: 1.3;
-      font-size: 18px
+      font-size: 20px
     }
   }
 `;

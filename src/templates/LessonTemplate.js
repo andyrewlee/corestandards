@@ -21,28 +21,37 @@ const StyledLink = styled(Link)`
   margin-right: 1rem;
 `;
 
+const Styles = styled.div`
+  p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+`;
+
 const LessonTemplate = ({ data, pageContext }) => {
-  console.log('pageContext', pageContext)
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const { next, prev } = pageContext;
 
   return (
     <Layout>
-      <Navbar />
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Styles>
+        <Navbar />
+        <h1>{frontmatter.title}</h1>
 
-      {prev &&
-        <StyledLink to={prev.frontmatter.path}>
-          Previous
-        </StyledLink>
-      }
-      {next &&
-        <StyledLink to={next.frontmatter.path}>
-          Next
-        </StyledLink>
-      }
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+
+        {prev &&
+          <StyledLink to={prev.frontmatter.path}>
+            Previous
+          </StyledLink>
+        }
+        {next &&
+          <StyledLink to={next.frontmatter.path}>
+            Next
+          </StyledLink>
+        }
+      </Styles>
     </Layout>
   );
 };

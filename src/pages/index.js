@@ -16,9 +16,12 @@ const StyledImage = styled.img`
 `;
 
 const ImageContent = styled.div`
-  margin-top: 40px;
   margin-left: 20px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    margin-left: 10px;
+  }
 `;
 
 const Home = () => (
